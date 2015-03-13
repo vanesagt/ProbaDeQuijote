@@ -1,3 +1,7 @@
+#FIXME: eliminar antes de subir a producción
+#Empezar a escribir, de izquierda a derecha cada uno una fila.
 
 
 no
+quiero acordarme
+
