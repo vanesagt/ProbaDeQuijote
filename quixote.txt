@@ -1,5 +1,8 @@
+#FIXME: eliminar antes de subir a producción
+#Empezar a escribir, de izquierda a derecha cada uno una fila.
 En un lugar de la Mancha
 de cuyo nombre
 no
 quiero acordarme
+vivia un ingenioso hidalgo
 
