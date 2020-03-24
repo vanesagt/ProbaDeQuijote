@@ -1,0 +1,54 @@
+entity Book {
+	title String
+    description String
+}
+
+entity Editorial {
+	name String
+}
+
+entity Author {
+	name String
+    apellido String
+}
+
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+entity Comentario {
+	comentario String required
+    valoracion Integer
+}
+
+
+
+relationship ManyToMany {
+	Author{authors} to Book{books}
+}
+
+relationship OneToOne {
+	Book{book} to Editorial{editorial}
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Author{author} to Location,
+}
+
+relationship ManyToOne {
+	Comentario{comentarios} to Book
+}
+
+// Set pagination options
+paginate Comentario with infinite-scroll
+paginate Book with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
